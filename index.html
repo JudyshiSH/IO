@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Judy | Supply Chain Expert & Engineer | Tech Sourcing | ISO Quality</title>
+<meta name="description" content="Engineer-led sourcing for machinery and electronics. 10+ years on the factory floor, ISO quality management, technical supplier vetting, DFM, audits and inspections.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F1F3F2;
+    --ink: #17222B;
+    --muted: #586672;
+    --line: #C9D1D6;
+    --work: #1F5FBF;      /* Output: work */
+    --life: #D08A0E;      /* Input: life */
+    --surface: #FFFFFF;
+    --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --sans: "IBM Plex Sans", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12181D; --ink: #E6EBEE; --muted: #97A4AE; --line: #2A3540;
+      --work: #7FA9FF; --life: #F1B84A; --surface: #19222A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; }
+  a { color: inherit; }
+  a:focus-visible { outline: 3px solid var(--work); outline-offset: 3px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { margin: 0; line-height: 1.15; }
+  h2 { font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: clamp(28px, 4vw, 40px); margin-bottom: 36px; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+  nav .logo { font-family: var(--display); font-weight: 800; font-size: 20px; text-decoration: none; }
+  nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; font-size: 15px; }
+  nav ul a { text-decoration: none; color: var(--muted); }
+  nav ul a:hover { color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 48px 0 80px; border-bottom: 1px solid var(--line); }
+  .hero-top { display: grid; grid-template-columns: auto 1fr; gap: 56px; align-items: center; }
+  .io { font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: clamp(110px, 18vw, 220px); line-height: .82; display: flex; }
+  .io .i { color: var(--life); }
+  .io .slash { color: var(--line); margin: 0 .03em; }
+  .io .o { color: var(--work); }
+  .hero h1 { font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: clamp(32px, 4.6vw, 54px); max-width: 15em; }
+  .hero .lede { margin: 24px 0 0; color: var(--muted); max-width: 36em; font-size: 18px; }
+  .io-key { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 40px 0 0; font-size: 15px; max-width: 40em; }
+  .io-key dt { font-weight: 600; }
+  .io-key .k-in { color: var(--life); }
+  .io-key .k-out { color: var(--work); }
+  .io-key dd { margin: 0; color: var(--muted); }
+  .hero-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .who { font-size: 16px; }
+  .who strong { display: block; font-size: 19px; }
+  .who span { color: var(--muted); }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 16px; border: 2px solid var(--ink); }
+  .btn.primary { background: var(--work); border-color: var(--work); color: #fff; }
+
+  section { padding: 88px 0; border-bottom: 1px solid var(--line); }
+
+  /* Why me */
+  .why { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; }
+  .why .pull { font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: clamp(24px, 3vw, 32px); line-height: 1.25; margin: 0; }
+  .why p { margin: 0 0 18px; color: var(--muted); }
+  .creds { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 28px 0 0; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
+  .creds dt { color: var(--muted); }
+  .creds dd { margin: 0; font-weight: 500; }
+
+  /* Services */
+  .offers { list-style: none; margin: 0; padding: 0; }
+  .offers li { display: grid; grid-template-columns: 300px 1fr; gap: 32px; padding: 28px 0; border-top: 1px solid var(--line); }
+  .offers li:last-child { border-bottom: 1px solid var(--line); }
+  .offers h3 { font-size: 21px; font-weight: 600; }
+  .offers p { margin: 0; color: var(--muted); max-width: 38em; }
+
+  /* Field notes timeline */
+  .intro-line { color: var(--muted); margin: -20px 0 40px; max-width: 40em; }
+  .log { margin: 0; padding: 0 0 0 28px; list-style: none; border-left: 2px solid var(--work); }
+  .log li { position: relative; padding-bottom: 40px; max-width: 44em; }
+  .log li:last-child { padding-bottom: 0; }
+  .log li::before { content: ""; position: absolute; left: -36px; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: var(--paper); border: 3px solid var(--work); }
+  .log time { font-size: 14px; color: var(--work); font-weight: 600; }
+  .log h3 { font-size: 20px; font-weight: 600; margin: 4px 0 8px; }
+  .log p { margin: 0; color: var(--muted); }
+
+  /* Life notes */
+  .notes { columns: 3 260px; column-gap: 20px; }
+  .note { break-inside: avoid; background: var(--surface); border-radius: 4px; padding: 22px 24px; margin-bottom: 20px; border-top: 4px solid var(--life); }
+  .note time { font-size: 13px; color: var(--muted); }
+  .note h3 { font-size: 18px; font-weight: 600; margin: 4px 0 6px; }
+  .note p { margin: 0; font-size: 15px; color: var(--muted); }
+
+  /* Contact */
+  .contact .big { font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: clamp(26px, 4.4vw, 44px); line-height: 1.2; max-width: 18em; margin: 0 0 32px; }
+  .contact dl { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 0 0 36px; }
+  .contact dt { color: var(--muted); }
+  .contact dd { margin: 0; font-weight: 500; }
+  footer { padding: 32px 0 48px; font-size: 14px; color: var(--muted); }
+
+  @media (max-width: 800px) {
+    nav ul { display: none; }
+    .hero { padding-top: 16px; }
+    .hero-top { grid-template-columns: 1fr; gap: 24px; }
+    .why { grid-template-columns: 1fr; gap: 28px; }
+    .offers li { grid-template-columns: 1fr; gap: 8px; }
+    section { padding: 64px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="logo" href="#">Judy</a>
+    <ul>
+      <li><a href="#why">Why me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#field-notes">Field notes</a></li>
+      <li><a href="#life">Off the floor</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-top">
+      <div class="io" aria-hidden="true"><span class="i">I</span><span class="slash">/</span><span class="o">O</span></div>
+      <div>
+        <h1>Anyone can find a supplier list in seconds. I find the factory that actually delivers.</h1>
+        <p class="lede">I bridge the gap between online data and what’s really happening on the factory floor, for machinery and electronics buyers who can’t afford hidden technical risk.</p>
+      </div>
+    </div>
+    <dl class="io-key">
+      <dt class="k-in">Input</dt><dd>Your specs, drawings and requirements, plus AI market data and my own technical database.</dd>
+      <dt class="k-out">Output</dt><dd>Verified factories, controlled risk, and goods that match the spec when they ship.</dd>
+    </dl>
+    <div class="hero-bottom">
+      <p class="who"><strong>Judy</strong><span>Supply Chain Expert & Engineer, Tech Sourcing, ISO Quality Management</span></p>
+      <div class="btns">
+        <!-- ✏️ Replace with your Upwork profile link -->
+        <a class="btn primary" href="https://www.upwork.com/freelancers/YOUR-PROFILE-ID">Hire me on Upwork</a>
+        <a class="btn" href="#contact">Email me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WHY ME ============ -->
+  <section id="why">
+    <h2>Why work with me</h2>
+    <div class="why">
+      <p class="pull">I don’t just middleman deals. I vet suppliers through an engineer’s lens.</p>
+      <div>
+        <p>I bring over a decade of boots-on-the-ground experience in complex machinery and electronics. I use my engineering background and ISO quality standards to judge what a factory can really do, not just what it claims.</p>
+        <p>I speak the language of engineers and the language of business, so nothing gets lost in translation. I run my own sourcing firm, giving clients professional-grade infrastructure rather than a basic agent.</p>
+        <dl class="creds">
+          <dt>Experience</dt><dd>10+ years in machinery & electronics</dd>
+          <dt>Standards</dt><dd>ISO quality management</dd>
+          <dt>Languages</dt><dd>English and Chinese</dd>
+          <dt>Rate</dt><dd>$45/hr on Upwork</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <h2>How I deliver value</h2>
+    <ul class="offers">
+      <li>
+        <h3>Smart sourcing & factory matchmaking</h3>
+        <p>I combine AI market tools with my own technical database to match you with the right manufacturers. Beyond price, I evaluate technical limits, specialized equipment, and fit with your project, such as dedicated production lines.</p>
+      </li>
+      <li>
+        <h3>Technical risk control</h3>
+        <p>I catch the red flags standard sourcing agents miss, long before your deposit is paid.</p>
+      </li>
+      <li>
+        <h3>Engineering insights</h3>
+        <p>DFM (Design for Manufacturing) feedback, cost breakdowns, and resolving complex technical discrepancies across global trade environments.</p>
+      </li>
+      <li>
+        <h3>End-to-end execution</h3>
+        <p>Supplier qualification and factory audits through final quality inspection and shipping logistics.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ FIELD NOTES (work log) ============ -->
+  <section id="field-notes">
+    <h2>Field notes</h2>
+    <p class="intro-line">What I’m working on: audits, factory visits, problems solved. Client names are kept confidential.</p>
+    <ol class="log">
+      <!-- ✏️ To add a note: copy one <li>…</li> block and paste it at the top (newest first) -->
+      <li>
+        <time datetime="2026-10-23">October 23, 2026</time>
+        <h3>[e.g. Audited a PCB assembly line for a US client]</h3>
+        <p>[What you checked, the red flag you found, and how it protected the client.]</p>
+      </li>
+      <li>
+        <time datetime="2026-10-20">October 20, 2026</time>
+        <h3>[e.g. DFM review cut unit cost by 12%]</h3>
+        <p>[Short description]</p>
+      </li>
+      <li>
+        <time datetime="2026-10-15">October 15, 2026</time>
+        <h3>[e.g. Final inspection before shipment]</h3>
+        <p>[Short description]</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ LIFE ============ -->
+  <section id="life">
+    <h2>Off the factory floor</h2>
+    <div class="notes">
+      <!-- ✏️ Each <article> is one life note; copy to add more -->
+      <article class="note">
+        <time datetime="2026-10-22">Oct 22</time>
+        <h3>[A book I’m reading]</h3>
+        <p>[One or two lines]</p>
+      </article>
+      <article class="note">
+        <time datetime="2026-10-19">Oct 19</time>
+        <h3>[Weekend trip]</h3>
+        <p>[One or two lines]</p>
+      </article>
+      <article class="note">
+        <time datetime="2026-10-16">Oct 16</time>
+        <h3>[Sport or hobby]</h3>
+        <p>[One or two lines]</p>
+      </article>
+      <article class="note">
+        <time datetime="2026-10-12">Oct 12</time>
+        <h3>[Something I noticed]</h3>
+        <p>[One or two lines]</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="big">Sourcing machinery or electronics? Let’s protect your investment before the deposit is paid.</p>
+    <dl>
+      <!-- ✏️ Replace with your details; delete any line you don’t want public -->
+      <dt>Upwork</dt><dd><a href="https://www.upwork.com/freelancers/YOUR-PROFILE-ID">Hire me on Upwork</a></dd>
+      <dt>Email</dt><dd><a href="mailto:you@example.com">you@example.com</a></dd>
+      <dt>LinkedIn</dt><dd>[your LinkedIn link]</dd>
+    </dl>
+    <div class="btns">
+      <a class="btn primary" href="https://www.upwork.com/freelancers/YOUR-PROFILE-ID">Hire me on Upwork</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Judy. Engineer-led sourcing for machinery & electronics.</footer>
+</div>
+</body>
+</html>
